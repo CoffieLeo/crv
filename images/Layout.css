@@ -29,7 +29,7 @@ body {margin: 0; padding:0; background-color: hsl(203, 100%, 93%);}
 }
 	
 /*全BOX版面*/
-.WRAPPER { position: relative;	display: inline-block;	margin: 0;	padding: 0;	width:100%; min-width:1220px;background-image   : url(bg-pc2.jpg);         
+.WRAPPER { position: relative;	display: inline-block;	margin: 0;	padding: 0;	width:100%; min-width:1220px;background-color: #0172d0;         
 	background-repeat  : no-repeat;
 	background-position: top center;
 	background-size: 100%; overflow: hidden;font-family:"微軟正黑體","Microsoft JhengHei",Helvetica;background-color: #007aff;}
@@ -47,7 +47,7 @@ body {margin: 0; padding:0; background-color: hsl(203, 100%, 93%);}
 	 .WRAPPER {min-width: inherit; }
 	 .WRAPPER img {width:100%; height:auto;}
 	}
-	@media screen and (min-width:767px){.WRAPPER {background-attachment: fixed ; background-color: #d3edfa}}
+	@media screen and (min-width:767px){.WRAPPER {background-attachment: fixed ; background-color: #0172d0}}
 
 
 .WRAPPER .go_bt {
