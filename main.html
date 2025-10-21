@@ -13,8 +13,10 @@
 <style>
   .fixed-ctrl {
 		position: fixed;
-		right: 20px;
-		bottom: 20px;
+		right: 0;
+		left: 0;
+		height: 150px;
+		bottom: 0px;
 		opacity: 0;
 		visibility: hidden;
 		transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -25,13 +27,35 @@
 		opacity: 1;
 		visibility: visible;
   }
+  .fixed-box{
+	width: 100%;
+	max-width: 1054px;
+	margin: 0 auto; 
+	position: relative;
+  }
   .left-box,
   .right-box {
+		position: absolute;
 		opacity: 0;
 		transform: translateY(0);
 		transition: opacity 0.6s ease, transform 0.6s ease;
 		pointer-events: auto;
   }
+
+  .left-box img, .right-box img{
+	width: auto;
+	height: 150px;
+  }
+
+  @media screen and (max-width: 767px) {
+		.fixed-ctrl{
+			height: 80px;
+			bottom: 50px;
+		}
+		.left-box img, .right-box img{
+			height: 80px;
+		}
+	}
 
   .left-box {
     	transform: translateX(-50px);
@@ -304,13 +328,13 @@
 				<img src="images/CRV-TOP5_05.jpg" class="lazy" data-original="images/CRV-TOP5_05.jpg" />
 			</a>
 		</div> -->
-		<div class="Area Area1220 Area_allbox fixed-ctrl" style="position: fixed; bottom: 0; left: 0; right: 0; height: 150px;">
-			<div class="fixed-box" style="width: 1054px; margin: 0 auto; position: relative;">
-				<div class="left-box" style="position: absolute; left: 0;">
-					<img style="width: auto; height: 150px;" src="images/p12_1.png" class="lazy" data-original="images/p12_1.png" />
+		<div class="Area Area1220 Area_allbox fixed-ctrl">
+			<div class="fixed-box">
+				<div class="left-box" style="left: 0;">
+					<img src="images/p12_1.png" class="lazy" data-original="images/p12_1.png" />
 				</div>
-				<div class="right-box" style="position: absolute; right: 0;">
-					<img style="width: auto; height: 150px;" src="images/p12_2.png" class="lazy" data-original="images/p12_2.png" />
+				<div class="right-box" style="right: 0;">
+					<img src="images/p12_2.png" class="lazy" data-original="images/p12_2.png" />
 				</div>
 			</div>
 		</div>
